@@ -21,6 +21,7 @@ int main()
 
     TEST("Test true", test_true);
     TEST("Test false", test_false);
+    TEST("Test equals", test_equals);
 
     TITLE("Test Combinatorics:");
     TEST("\tFactorial", test_factorial);
