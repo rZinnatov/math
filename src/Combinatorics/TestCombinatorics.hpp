@@ -1,9 +1,9 @@
 #include "Combinatorics.hpp"
 
 bool test_factorial();
-bool test_arrangeWithRepetitions();
-bool test_arrangeWithoutRepetitions();
-bool test_chooseWithoutRepetitions();
-bool test_chooseWithRepetitions();
+bool test_arrangeReps();
+bool test_arrangeNoReps();
+bool test_chooseNoReps();
+bool test_chooseReps();
 
 bool test_equals();

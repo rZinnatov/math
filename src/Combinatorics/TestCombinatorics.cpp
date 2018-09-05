@@ -75,27 +75,27 @@ bool test_factorial() {
         areEquals(ZZ::Math::Combinatorics::factorial(20), 2432902008176640000, precision)
     ;
 }
-bool test_arrangeWithRepetitions() {
-    return areEquals(ZZ::Math::Combinatorics::arrangeWithRepetitions(3, 5), 243, precision)
-        && areEquals(ZZ::Math::Combinatorics::arrangeWithRepetitions(30, 50), 7.17897987691852588770249e+73, precision)
-        && areEquals(ZZ::Math::Combinatorics::arrangeWithRepetitions(50, 100), 7.8886090522101180541172856528279e+169, precision)
+bool test_arrangeReps() {
+    return areEquals(ZZ::Math::Combinatorics::arrangeReps(3, 5), 243, precision)
+        && areEquals(ZZ::Math::Combinatorics::arrangeReps(30, 50), 7.17897987691852588770249e+73, precision)
+        && areEquals(ZZ::Math::Combinatorics::arrangeReps(50, 100), 7.8886090522101180541172856528279e+169, precision)
     ;
 }
-bool test_arrangeWithoutRepetitions() {
-    return areEquals(ZZ::Math::Combinatorics::arrangeWithoutRepetitions(5, 3), 60, precision)
-        && areEquals(ZZ::Math::Combinatorics::arrangeWithoutRepetitions(50, 30), 1.25012e+46, precision)
-        && areEquals(ZZ::Math::Combinatorics::arrangeWithoutRepetitions(100, 50), 3.06852e+93, precision)
+bool test_arrangeNoReps() {
+    return areEquals(ZZ::Math::Combinatorics::arrangeNoReps(5, 3), 60, precision)
+        && areEquals(ZZ::Math::Combinatorics::arrangeNoReps(50, 30), 1.25012e+46, precision)
+        && areEquals(ZZ::Math::Combinatorics::arrangeNoReps(100, 50), 3.06852e+93, precision)
     ;
 }
-bool test_chooseWithRepetitions() {
-    return areEquals(ZZ::Math::Combinatorics::chooseWithRepetitions(3, 5), 84, precision)
-        && areEquals(ZZ::Math::Combinatorics::chooseWithRepetitions(30, 50), 9.5819694105875247169048764500886e+53, precision)
-        && areEquals(ZZ::Math::Combinatorics::chooseWithRepetitions(50, 100), 2.4825806457049290738310640896637e+165, precision)
+bool test_chooseReps() {
+    return areEquals(ZZ::Math::Combinatorics::chooseReps(3, 5), 84, precision)
+        && areEquals(ZZ::Math::Combinatorics::chooseReps(30, 50), 9.5819694105875247169048764500886e+53, precision)
+        && areEquals(ZZ::Math::Combinatorics::chooseReps(50, 100), 2.4825806457049290738310640896637e+165, precision)
     ;
 }
-bool test_chooseWithoutRepetitions() {
-    return areEquals(ZZ::Math::Combinatorics::chooseWithoutRepetitions(5, 3), 360, precision)
-        && areEquals(ZZ::Math::Combinatorics::chooseWithoutRepetitions(50, 30), 3.315967997574713330783446409775e+78, precision)
-        && areEquals(ZZ::Math::Combinatorics::chooseWithoutRepetitions(100, 50), 9.3326215443944152681699238856267e+157, precision)
+bool test_chooseNoReps() {
+    return areEquals(ZZ::Math::Combinatorics::chooseNoReps(5, 3), 360, precision)
+        && areEquals(ZZ::Math::Combinatorics::chooseNoReps(50, 30), 3.315967997574713330783446409775e+78, precision)
+        && areEquals(ZZ::Math::Combinatorics::chooseNoReps(100, 50), 9.3326215443944152681699238856267e+157, precision)
     ;
 }

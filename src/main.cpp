@@ -25,10 +25,10 @@ int main()
 
     TITLE("Test Combinatorics:");
     TEST("\tFactorial", test_factorial);
-    TEST("\tArrange w reps", test_arrangeWithRepetitions);
-    TEST("\tArrange w/o reps", test_arrangeWithoutRepetitions);
-    TEST("\tChoose w reps", test_chooseWithRepetitions);
-    TEST("\tChoose w/o reps", test_chooseWithoutRepetitions);
+    TEST("\tArrange w reps", test_arrangeReps);
+    TEST("\tArrange w/o reps", test_arrangeNoReps);
+    TEST("\tChoose w reps", test_chooseReps);
+    TEST("\tChoose w/o reps", test_chooseNoReps);
 
     TITLE("Done");
     return 0;

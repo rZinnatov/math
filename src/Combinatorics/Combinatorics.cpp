@@ -9,10 +9,10 @@ double ZZ::Math::Combinatorics::factorial(int n) {
 
 	return n * factorial(n - 1);
 }
-double ZZ::Math::Combinatorics::arrangeWithRepetitions(int n, int k) {
+double ZZ::Math::Combinatorics::arrangeReps(int n, int k) {
 	return pow(n, k);
 }
-double ZZ::Math::Combinatorics::arrangeWithoutRepetitions(int n, int k) {
+double ZZ::Math::Combinatorics::arrangeNoReps(int n, int k) {
 	double numberOfPermutations = 1;
  
 	for (double i = n; i > n - k; i--) {
@@ -21,9 +21,9 @@ double ZZ::Math::Combinatorics::arrangeWithoutRepetitions(int n, int k) {
  
 	return numberOfPermutations;
 }
-double ZZ::Math::Combinatorics::chooseWithoutRepetitions(int n, int k) {
-	return arrangeWithoutRepetitions(n, k) / factorial(k);
+double ZZ::Math::Combinatorics::chooseNoReps(int n, int k) {
+	return arrangeNoReps(n, k) / factorial(k);
 }
-double ZZ::Math::Combinatorics::chooseWithRepetitions(int n, int k) {
-	return chooseWithoutRepetitions(n + k - 1, k);
+double ZZ::Math::Combinatorics::chooseReps(int n, int k) {
+	return chooseNoReps(n + k - 1, k);
 }
