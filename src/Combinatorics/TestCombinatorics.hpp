@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Combinatorics.hpp"
 
 bool test_factorial();
