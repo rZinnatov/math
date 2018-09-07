@@ -1,20 +1,12 @@
 #include <iostream>
+#include "ZZTest/zz-test.h"
+#include "ZZTest/TestZZTest.h"
 #include "Combinatorics/TestCombinatorics.hpp"
 
-#define TITLE(str) std::cout \
-    << "\x1b[1m" << str << "\x1b[0m" \
-    << std::endl \
-;
-#define PASSED "\x1b[32mPassed\x1b[0m"
-#define FAILED "\x1b[31mFailed\x1b[0m"
-#define TEST(name, method) std::cout \
-    << name << ": " \
-    << (method() ? PASSED : FAILED) \
-    << std::endl \
-;
 
 bool test_true () { return true; }
 bool test_false () { return false; }
+
 int main()
 {
     TITLE("Test algorithms implementations:");
@@ -22,7 +14,9 @@ int main()
     TITLE("Test Common:");
     TEST("\tTest true", test_true);
     TEST("\tTest false", test_false);
-    TEST("\tTest equals", test_equals);
+
+    TITLE("Test ZZTest:");
+    TEST("\tTest equals", test_areEquals);
 
     TITLE("Test Combinatorics:");
     TEST("\tFactorial", test_factorial);
