@@ -19,9 +19,10 @@ int main()
 {
     TITLE("Test algorithms implementations:");
 
-    TEST("Test true", test_true);
-    TEST("Test false", test_false);
-    TEST("Test equals", test_equals);
+    TITLE("Test Common:");
+    TEST("\tTest true", test_true);
+    TEST("\tTest false", test_false);
+    TEST("\tTest equals", test_equals);
 
     TITLE("Test Combinatorics:");
     TEST("\tFactorial", test_factorial);
