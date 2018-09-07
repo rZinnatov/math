@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 2.6)
 project(math)
 
+set(CMAKE_C_COMPILER "${COMPILER}gcc")
+set(CMAKE_CXX_COMPILER "${COMPILER}g++")
+
 add_subdirectory(Combinatorics)
 add_subdirectory(ZZTest)
 

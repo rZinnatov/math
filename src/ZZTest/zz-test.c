@@ -1,5 +1,7 @@
 #include "zz-test.h"
 
+
+// <-- Private functions -->
 double __zztest_round(double d)
 {
     if (d < 0 ) {
@@ -7,11 +9,14 @@ double __zztest_round(double d)
     }
     return floor(d + 0.5);
 }
+// </- Private functions -->
 
+
+// <-- Public functions -->
 int zztest_areEquals(
-    double d1,
-    double d2,
-    int decimalPointsPrecision
+    const double d1,
+    const double d2,
+    const int decimalPointsPrecision
 ) {
     if (isnan(d1) || isnan(d2)) {
         return 0;
@@ -30,3 +35,4 @@ int zztest_areEquals(
     const double precision = 1 / pointShift;
     return fabs(d1Rounded - d2Rounded) <= precision;
 }
+// </- Public functions -->

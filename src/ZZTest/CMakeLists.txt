@@ -1,4 +1,4 @@
 add_library(zz-test
-    zz-test.cpp
-    TestZZTest.cpp
+    zz-test.c
+    TestZZTest.c
 )
